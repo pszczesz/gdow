@@ -1,0 +1,17 @@
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    border: solid thin black;
+    padding: 5px;
+}
+td.first{
+    background-color: #ff9999;
+}
+tr.add{
+    font-weight: bold;
+    color: #990000;
+}

@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <title>ćwiczenie 7 Tablice wstęp</title>
     </head>
-    <pre>
-    <body>
+     <body>
         <h1>ćwiczenie 7 Tablice wstęp</h1>
         <?php
         $tab = [12,5,78,"ala ma kota",true];
@@ -29,8 +28,19 @@
       }
       return $result;
   }
-  print_r(GenerTab(15, 3));
+  $wynik = GenerTab(23, 3);
+  print_r($wynik);
+  echo "Rozmiar tablicy: ".  count($wynik);
+  echo '<ul>';
+  for($i=0; $i<count($wynik);$i++){
+      echo "<li>{$wynik[$i]}</li>\n";
+  }
+  
+  echo'</ul>';
+  function Kolory(){
+      return ["red","blue","green","black","white"];
+  }
   ?>
-    </pre>
+    
     </body>
 </html>

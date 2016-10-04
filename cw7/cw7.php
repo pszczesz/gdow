@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -38,9 +37,26 @@
   
   echo'</ul>';
   function Kolory(){
-      return ["red","blue","green","black","white"];
+      return ["red","blue","green","black","white","grey"];
   }
+  function ColorsToHtmlSelect(array $kolory){
+      $html = '<select>'."\n";
+      for($i=0; $i<count($kolory);$i++){
+          $html .= "\t<option value='{$kolory[$i]}'"
+              . ">{$kolory[$i]}</option>\n";
+      }
+      $html .= "</select>\n";
+      return $html;
+  }  
   ?>
-    
+      <h3>Użycie tablicy w select</h3>
+      <?php
+        $cols = Kolory();
+        echo "<h5>Kolory nie posortowane</h5>\n";
+        echo ColorsToHtmlSelect($cols);
+        echo "<h5>Kolory posortowane</h5>\n";
+        sort($cols);
+        echo ColorsToHtmlSelect($cols);
+      ?>
     </body>
 </html>

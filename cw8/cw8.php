@@ -35,6 +35,7 @@
             require_once 'functions.php';
             echo "<h4>uczestnicy wycieczki</h4>\n";
             echo GenerTab(Uczestnicy());
+            echo GenerList(Uczestnicy());
         ?>
     </body>
 </html>

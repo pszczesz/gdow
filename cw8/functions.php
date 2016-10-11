@@ -33,3 +33,13 @@ function GenerTab(array $dane) {
     $html .= "</table>";
     return $html;
 }
+function GenerList(array $dane){
+    $html = '<ol>'."\n";
+    foreach ($dane as $row) {
+        $html .= "<li><span class='mark'>{$row[1]}</span>"
+        . " {$row[0]} <span class='red'>{$row[2]}</span>"
+        . " {$row[3]}</li>\n";
+    }
+    $html .= "</ol>\n";
+    return $html;
+}

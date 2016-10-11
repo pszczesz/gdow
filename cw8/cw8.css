@@ -17,6 +17,7 @@ td,th{
 .right{
     text-align: right;
 }
-tr.mark{
+.mark{
     font-weight: bold;
 }
+span.red{ color: red;}

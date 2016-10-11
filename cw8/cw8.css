@@ -1,0 +1,22 @@
+
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: #990000;
+    color: #ff9999;
+}
+td{
+    background-color:#ffcccc;
+    color: #990000;
+}
+td,th{
+    border: solid thin black;
+    padding: 5px;
+}
+.right{
+    text-align: right;
+}
+tr.mark{
+    font-weight: bold;
+}

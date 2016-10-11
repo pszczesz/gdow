@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Ćwiczenie 8 - tablice wielowymiarowe</title>
+        <link href="cw8.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <h1>Ćwiczenie 8 - tablice wielowymiarowe</h1>
@@ -31,24 +32,7 @@
         </pre>
         <h3>Wycieczka</h3>
         <?php
-            function Uczestnicy(){
-                return [
-                  ["Jan","Nowak","23432343561"],
-                  ["Monika","Gryk","67342343561"],
-                  ["Heniek","Turecki","23782343561"],
-                  ["Adam","Kwas","24562343561"],
-                  ["Renata","Rygiel","45321343561"],
-                  ["Szymon","Musiał","76542343561"],
-                  ["Alojzy","Urych","76892343561"],
-                  ["Jadwiga","Urych","45672343561"],
-                ];
-            }
-            function GenerTab(array $dane){
-                $html = "<table>\n";
-                
-                $html .= "</table>";
-                return $html;
-            }
+            require_once 'functions.php';
             echo "<h4>uczestnicy wycieczki</h4>\n";
             echo GenerTab(Uczestnicy());
         ?>

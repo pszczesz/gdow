@@ -1,0 +1,41 @@
+div#wrapper{
+    text-align: center;
+    margin: auto;
+    width: 1100px;   
+}
+div#header{
+    background-color: #ffcccc;
+    font-size: 4em;
+    font-weight: bold;
+    padding: 10px;
+}
+div#menu{
+    float: left;
+    width: 250px;
+    margin: 0;
+}
+div#menu ul li a{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    background-color: #ff9999;
+    color: #990000;
+    text-decoration: none;
+}
+div#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div#menu ul li a:hover{
+    margin: 0;
+   
+   background-color: #990000;
+    color: #ff9999; 
+}
+div#content{
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+   
+}

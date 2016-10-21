@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formularz w php</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cw11.css"/>
+    </head>
+    <body>
+        <h1>Formularz w php</h1>
+        <form id="form1" action="cw11Wynik.php" method="post">
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <div class="line">
+                    <span class="info">Imię:</span>
+                    <input type="text" name="imie" id="imie"/>
+                    <span class="error" id="errorimie"></span>
+                </div>
+                <div class="line">
+                    <span class="info">Nazwisko:</span>
+                    <input type="text" name="nazwisko" id="nazwisko"/>
+                    <span class="error" id="errornazwisko"></span>
+                </div>
+                <div class="line">
+                    <span class="info">Klasa:</span>
+                    <select name="klasa" id="klasa">
+                        <option value="1A">1A</option>
+                        <option value="1B">1B</option>
+                        <option value="1C">1C</option>
+                        <option value="2A">2A</option>
+                        <option value="2B">2B</option>
+                        <option value="2C">2C</option>
+                        <option value="3A">3A</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <span class="info"></span>
+                    <input type="submit" value="Zatwierdź"/>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

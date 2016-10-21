@@ -13,7 +13,6 @@ function GetDays(){
         //todo
     ];
 }
-
 function GenerSelectFromArray(array $kolory, $isBykeys = TRUE) {
     $html = "<select id='sel'>\n";
     if ($isBykeys) {

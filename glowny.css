@@ -1,1 +1,16 @@
 
+
+.menuitem a{
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    background-color: #99ffcc;
+    color: #006666; 
+    border: solid thin #006666;
+    text-decoration: none;
+    
+}
+.menuitem a:hover{
+     background-color:#006666;
+    color:  #99ffcc; 
+}

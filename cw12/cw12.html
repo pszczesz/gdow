@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cw12.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Podstawowe działania</h1>
+        <form id="form1" method="POST" action="wynik.php">
+            <fieldset>
+                <legend>Działania</legend>
+                <div class="line">
+                    <span class="info">a:</span>
+                    <input name="a" type="text" id="a"/>
+                    <span class="error" id="aerror"></span>
+                </div>
+                 <div class="line">
+                    <span class="info">b:</span>
+                    <input name="b" type="text" id="b"/>
+                    <span class="error" id="berror"></span>
+                </div>
+                 <div class="line">
+                    <span class="info">Wybierz działanie</span>
+                    <select name="dzialanie">
+                        <option value="1">Dodaj</option>
+                        <option value="2">Odejmij</option>
+                        <option value="3">Pomnóż</option>
+                        <option value="4">Podziel</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <span class="info"></span>
+                    <input type="submit" value="Oblicz"/>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+
+span.info{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+div.line{
+    margin-bottom: 10px;
+}
+span.error{
+    color: red;
+}

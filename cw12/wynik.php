@@ -17,7 +17,7 @@
                     filter_var($b, FILTER_VALIDATE_FLOAT) === false) {
                 echo '<p>Błędne lub brak danych</p>';
             } else {
-                $dzialanie = filter_input(INPUT_POST, 'dzialanie');
+                $dzia3lanie = filter_input(INPUT_POST, 'dzialanie');
                 switch ($dzialanie) {
                     case '1':
                         echo "<p>{$a} + {$b} = " . ($a + $b) . "</p>\n";

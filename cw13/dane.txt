@@ -1,0 +1,10 @@
+ Jeśli nazwa_pliku jest w postaci "schemat://...", to przypuszczalnie jest to URL i PHP szuka protokołu obsługi Ala ma kota 
+(także zwanego wrapper'em) dla tego schematu. Jeśli nie zarejestrowano żadnego wrapper'a dla tego protokołu, 
+PHP wyemituje notatkę, aby pomóc Tobie w wyśledzeniu potencajalnego problemu w Twoim skrypcie następnie będzie kontynuować 
+z podanym nazwa_pliku traktując go jako zwykły plik.
+Jeśli PHP zdecyduje, że nazwa_pliku określa lokalny plik, wtedy spróbuje otworzyć strumień na tym pliku.
+ Plik musi być dostępny dla PHP, więc musisz zapewnić prawa dostępu do pliku pozwalające na taką operację. 
+Jeśli masz włączone tryb bezpieczny lub open_basedir mogą mieć zastosowanie dodatkowe restrykcje.
+Jeśli PHP zdecyduje, że nazwa_pliku określa zarejestrowany protokół i ten protokół jest zarejestowany jako sieciowy URL, 
+PHP sprawdzi allow_url_fopen czy jest włączone. Jeśli jest wyłączone (off), PHP wyświetli ostrzeżenie i wywołanie 
+fopen zakończy się niepowodzeniem. 

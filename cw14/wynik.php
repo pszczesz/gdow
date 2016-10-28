@@ -11,8 +11,8 @@
                 && isset($_POST['wiek']) ){
             $imie = $_POST['imie'];
             $nazwisko = $_POST['nazwisko'];
-            $wiek = $_POST['wiek'];
-            if(!empty($nazwisko) && !empty($imie)){
+            $wiek = intval($_POST['wiek']);
+            if(!empty($nazwisko) && !empty($imie) && $wiek>0){
                 $line = "{$imie}|{$nazwisko}|{$wiek}".PHP_EOL;
                 $f = fopen("dane.txt", 'a');
                 if($f){

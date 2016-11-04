@@ -2,17 +2,24 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
     </head>
     <body>
-        <div id="wrapper">
-            <form id="form1" method="POST" action="wynik.php">
+        <h2>Edytowanie rekordu o indeksie</h2>
+        <?php
+        require_once 'functions.php';
+        if(isset($_GET['k'])){
+            $k=$_GET['k'];
+            $users = GetAllFromFile('dane.txt');
+            //unset($users[$k]);
+            //TODOO formularz z danymi z rekorsu o indeksie k w tab $users
+           $form = <<<TEXT
+              <form id="form1" method="POST" >
                 <fieldset>
                     <div>
                         <span class='info'>Podaj imie:</span>
-                        <input type="text" name='imie' id='imie'/>
+                        <input type="text" name='imie' id='imie' value='{$users[$k][0]}'/>
                         <span class='error'></span>
                     </div>
                     <div>
@@ -27,12 +34,17 @@
                     </div>
                     <input type="submit" value="Zapisz"/>
                 </fieldset>
-            </form>
-            
-             <div>
-            <a href="cw14.html">Powrót do formularza</a><br>
+            </form>      
+                   
+TEXT;
+            echo $form;            
+   //         SaveToFile($users, 'dane.txt');
+//            echo '<pre>';
+//            var_dump($users);
+//            echo '</pre>';
+        }
+        ?>
+        <a href="cw14.html">Powrót do formularza</a><br>
             <a href="getAll.php">Wyświetl wszystkich</a>
-        </div>
-        </div>
     </body>
 </html>

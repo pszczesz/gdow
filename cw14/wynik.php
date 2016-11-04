@@ -27,7 +27,8 @@
         }
         ?>
         <div>
-            <a href="cw14.html">Powrót</a>
+            <a href="cw14.html">Powrót do formularza</a><br>
+            <a href="getAll.php">Wyświetl wszystkich</a>
         </div>
     </body>
 </html>

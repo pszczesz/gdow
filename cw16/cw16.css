@@ -1,0 +1,32 @@
+div#wrapper{
+    margin: auto;
+    text-align: center;
+    width: 1000px;
+}
+div#header{
+   height: 120px;
+   background-color:#ff9966;
+   color:brown;
+   font-size: 4em;
+   padding: 20px;
+}
+div#menu{
+    float: left;
+    width: 200px;
+    background-color: #ffcccc;
+    text-align: left;    
+}
+div#menu ul{
+    list-style: none;
+}
+div#menu ul li a{
+    text-decoration: none;
+    color: brown;
+}
+#div#content{
+    
+}
+div#footer{
+    
+}
+

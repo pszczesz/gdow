@@ -39,3 +39,32 @@ function uczestnicyToHtmlTab(array $dane){
     $html .= "</table>";
     return $html;
 }
+function getKursy($conn){
+    if(!$conn) {return [];}
+    $sql = "SELECT * FROM kursy ORDER BY nazwa";
+    $result = $conn->query($sql);
+    if($result){
+        $dane = [];
+        while($row=$result->fetch_assoc()){
+            $dane[]=$row;
+        }
+        return $dane;
+    }else{
+        return [];
+    }
+}
+function kursyToSelect(array $dane){
+    $html = "<select name='kursy'>";
+    foreach ($dane as $item) {
+        $html .= "<option value='{$item['kursid']}'>{$item['nazwa']}"
+                    . "</option>\n";
+    }
+    return $html.'</select>';
+}
+function addUser($imie,$nazwisko,$kurs,$conn){
+    if(!$conn){return;}
+    $sql = "INSERT INTO uczestnicy(imie,nazwisko,kursid) VALUES" 
+        . "('{$imie}','{$nazwisko}',{$kurs})";
+    $result = $conn->query($sql);
+    return $result;
+}

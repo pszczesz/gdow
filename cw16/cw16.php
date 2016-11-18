@@ -11,8 +11,8 @@
             <div id="header">NOWOCZESNE KURSY</div>
             <div id="menu">
                 <ul>
-                    <li><a href="">Strona główna</a></li>
-                    <li><a href="">Dodaj uczestnika</a></li>
+                    <li><a href="cw16.php">Strona główna</a></li>
+                    <li><a href="dodaj.php">Dodaj uczestnika</a></li>
                     <li><a href="">Usuń uczestnika</a></li>
                     <li><a href="">Pokaż kursy</a></li>
                 </ul>

@@ -34,12 +34,36 @@ div#menu ul li a:hover{
     color: #ffcc99;
    background-color: brown;
 }
-#div#content{
+div#content{
+    float: left;
+    margin: auto;
     text-align: left;
-    background-color: #ffcc99;
+    width: 750px;
+    
 }
 div#footer{
     font-size: 0.7em;
     clear: both;
 }
-
+table{
+    margin: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+th,td{
+    text-align: left;
+    border: solid thin brown;
+    padding: 5px;
+}
+span.info{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+div.line{
+    margin-bottom: 10px;
+}
+span.error{
+    color: red;
+}

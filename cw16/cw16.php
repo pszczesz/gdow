@@ -21,11 +21,13 @@
                 <?php
                 require_once 'baza.php';
                 $conn = GetConnection(MY_SRV, MY_USR, MY_PSWD, MY_DB);
-                var_dump($conn);
+                $dane = GetAllUser($conn);
+                echo uczestnicyToHtmlTab($dane);
+                
                 ?>
             </div>
             <div id="footer">
-                kursy 2016
+                &copy; kursy 2016
             </div>
         </div>
     </body>

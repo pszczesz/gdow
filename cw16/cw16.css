@@ -13,20 +13,33 @@ div#header{
 div#menu{
     float: left;
     width: 200px;
-    background-color: #ffcccc;
+    background-color: #ffcc99;
     text-align: left;    
 }
 div#menu ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 div#menu ul li a{
+    padding: 15px;
+    display: block;
+    text-align: right;
     text-decoration: none;
     color: brown;
+    
+    border: solid thin brown;
+}
+div#menu ul li a:hover{
+    color: #ffcc99;
+   background-color: brown;
 }
 #div#content{
-    
+    text-align: left;
+    background-color: #ffcc99;
 }
 div#footer{
-    
+    font-size: 0.7em;
+    clear: both;
 }
 

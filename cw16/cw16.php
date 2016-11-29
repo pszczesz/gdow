@@ -14,7 +14,7 @@
                     <li><a href="cw16.php">Strona główna</a></li>
                     <li><a href="dodaj.php">Dodaj uczestnika</a></li>
                     <li><a href="usun.php">Usuń uczestnika</a></li>
-                    <li><a href="">Pokaż kursy</a></li>
+                    <li><a href="kursy.php">Pokaż kursy</a></li>
                 </ul>
             </div>
             <div id="content">

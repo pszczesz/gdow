@@ -93,3 +93,16 @@ function usersToSelect(array $dane){
     $html .= "</select><input type='submit' value='Usuń'/></form>\n";
     return $html;
 }
+function deleteUser($conn, $id){
+    $sql = "DELETE FROM uczestnicy WHERE uczestnikid={$id}";
+    $result = $conn->query($sql);
+    return $result;
+}
+function kursyToList(array $dane){
+     $html = "<ol>";
+    foreach ($dane as $item) {
+        $html .= "<li>{$item['nazwa']}"
+                    . "</li>\n";
+    }
+    return $html.'</ol>';
+}

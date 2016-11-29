@@ -41,6 +41,12 @@ div#content{
     width: 750px;
     
 }
+
+form,fieldset{
+     color: brown;
+    background-color: #ffcc99;
+    border: solid thin brown;
+}
 div#footer{
     font-size: 0.7em;
     clear: both;

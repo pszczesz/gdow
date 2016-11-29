@@ -68,3 +68,28 @@ function addUser($imie,$nazwisko,$kurs,$conn){
     $result = $conn->query($sql);
     return $result;
 }
+function getAllOnlyUsers($conn){
+    $sql = "SELECT uczestnikid,imie, nazwisko FROM uczestnicy "            
+            . " ORDER by nazwisko";
+    $result = $conn->query($sql);
+    if ($result) {
+        $dane = [];
+        while ($row = $result->fetch_assoc()) {
+            $dane[]=$row;
+        }
+        return $dane;
+    }else{
+        die("error connection");
+    }
+}
+function usersToSelect(array $dane){
+    //var_dump($dane);
+    $html = "<form method='POST' action='delete.php'>\n";
+    $html .= "<select name='user'>\n";
+    foreach ($dane as $user) {
+        $html .= "<option value='{$user['uczestnikid']}'>"
+                . "{$user['nazwisko']} {$user['imie']} </option>\n";
+    }
+    $html .= "</select><input type='submit' value='Usuń'/></form>\n";
+    return $html;
+}

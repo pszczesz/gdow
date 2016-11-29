@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -21,9 +20,8 @@
                 <?php
                 require_once 'baza.php';
                 $conn = GetConnection(MY_SRV, MY_USR, MY_PSWD, MY_DB);
-                $dane = GetAllUser($conn);
-                echo uczestnicyToHtmlTab($dane);
-                
+                $dane = getAllOnlyUsers($conn);
+                echo usersToSelect($dane);
                 $conn->close();
                 ?>
             </div>

@@ -7,3 +7,18 @@
     margin-left: 20px;
     width: 70%;
 }
+table{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+td,th{
+    border: solid thin gray;
+    padding: 5px;
+}
+th{
+    text-align: center;
+    color: lightgray;
+    background-color: darkslategray;
+}

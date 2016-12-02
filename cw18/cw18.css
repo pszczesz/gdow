@@ -1,0 +1,9 @@
+
+.info{
+    padding: 10px;
+    border: solid thin green;
+    color: green;
+    background-color: #99ff99;
+    margin-left: 20px;
+    width: 70%;
+}

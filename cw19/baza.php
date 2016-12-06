@@ -23,3 +23,18 @@ function getAllRecs($conn){
     }
     return [];
 }
+function imieToSelect(array $imiona){
+    $html = "<select name='imiona' >\n";
+    foreach ($imiona as $imie) {
+        $html .= "<option value='{$imie->getId()}'>{$imie->getNazwa()}</option>\n";
+    }
+    $html .= "</select>";
+    return $html;
+}
+function imionaToPar(array $imiona){
+    $html = "";
+    foreach ($imiona as $imie) {
+        $html .= "<p class='hide' id='{$imie->getId()}'>{$imie->getOpis()}</p>\n";
+    }
+    return $html;
+}

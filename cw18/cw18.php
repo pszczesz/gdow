@@ -16,6 +16,7 @@
         }
         $students = Repository::getAllStudents();
         echo StudentsToHtmlTab($students);
+        echo StudentsToHtmlList($students);
         ?>
     </body>
 </html>

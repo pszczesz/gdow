@@ -17,5 +17,12 @@ function StudentsToHtmlTab(array $students){
     return $html."</table>\n";
 }
 function StudentsToHtmlList(array $students){
-    
+     $html = "<ol>\n";
+     foreach ($students as $student) {
+        
+        $html .= "<li><span class='bold'>{$student->getImie()}</span> "
+            . "{$student->getNazwisko()} "
+            . "<span class=''{$student->getSrOcen()}</li>\n";
+    }
+    return $html."</ol>\n";
 }

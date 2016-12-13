@@ -1,0 +1,16 @@
+input[type=button]{
+    margin-top: 10px;
+    width: 150px;
+    padding: 5px;
+}
+div#wynik{
+    font-size: 2em;
+    color: green;
+}
+input[type=text]{
+    width: 50px;
+}
+div#wrapper{
+    margin: auto;
+    text-align: center;
+}

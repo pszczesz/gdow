@@ -4,3 +4,7 @@
 .wyr{
     font-weight: bold;
 }
+.wykonywalny{
+    border: solid thin green;
+    padding: 10px;
+}

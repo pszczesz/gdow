@@ -1,0 +1,19 @@
+
+div#wrapper{
+    margin: auto;
+    text-align: center;
+}
+h1{
+    border-bottom: solid thin greenyellow;
+    width: 60%;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    width: 24px;
+    height: 24px;
+    border: solid thin black;
+}

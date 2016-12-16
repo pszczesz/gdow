@@ -4,8 +4,13 @@ window.onload = function () {
     var cols = 15;
     document.getElementById("tabelka").innerHTML = gener(rows, cols);
     var tds = document.getElementsByTagName("td");
+    
     for(var i=0;i<tds.length;i++){
-        tds[i].onclick = function (){
+//        tds[i].addEventListener('contextmenu',function(evt){
+//            evt.preventDefault();
+//        },false);
+        tds[i].onclick = function (event){
+            alert(event.button);
             this.innerHTML = '<img src="krzyzyk.jpg"/>';
         };
     }

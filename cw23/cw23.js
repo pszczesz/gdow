@@ -6,12 +6,15 @@ window.onload = function () {
     var tds = document.getElementsByTagName("td");
     
     for(var i=0;i<tds.length;i++){
-//        tds[i].addEventListener('contextmenu',function(evt){
-//            evt.preventDefault();
-//        },false);
-        tds[i].onclick = function (event){
-            alert(event.button);
+        tds[i].addEventListener('contextmenu',function(evt){
+            evt.preventDefault();
+        },false);
+        tds[i].onmousedown = function (event){
+            if(event.button==0){
             this.innerHTML = '<img src="krzyzyk.jpg"/>';
+            }else if(event.button==2){
+                this.innerHTML = '<img src="koleczko.jpg"/>';
+            }
         };
     }
 };
